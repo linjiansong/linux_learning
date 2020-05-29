@@ -1,6 +1,0 @@
-1.远程连接
-1.1 命令行连接 -- SSH
-server端--局域网或在有固定IP的服务器
-server即我们要远程控制的电脑。确认开启ssh server服务
-systemctl status sshd.service   # for ubuntu 16.0+ or centos 7+, which  based on systemctl
-service ssh status  # for ubuntu 14.04
