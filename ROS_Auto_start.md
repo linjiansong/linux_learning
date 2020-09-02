@@ -83,9 +83,10 @@ B: 把脚本增加入Service：
 ```
 此时，会把脚本beacool_rfkill 加入到/etc/rcX.d/目录中。X:0-6, 分别表示不同的启动级别。3为字符界面启动，5为GUI启动。其它不关键。脚本名则在/etc/rc3.d/中变为：S95beacool_rfkill，命令中，最后的数字表示表示启动顺序。
 C: 如果想要去掉此Service：
+```
 	$ cd /etc/init.d
 	$ sudo update-rc.d -f beacool_rfkill remove
-
+```
 ## ROS程序使用Service方式启动
 为了查看脚本是否有效，可以查看log. Sam在脚本中作了如下动作：
 ```
